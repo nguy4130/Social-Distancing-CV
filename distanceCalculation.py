@@ -6,9 +6,9 @@ Created on Fri Dec 11 19:00:58 2020
 @author: vcroopana
 """
 import numpy as np
-from yolo_v3_keras.yolo_v3_predict import getYOLOBBox, BoundBox
+from yolo.yolo_v3_predict import getYOLOBBox, BoundBox
 from pathlib import Path
-from get_perspective_transform.pyimagesearch.transform import four_point_transform, resizePatches
+from transform import four_point_transform, resizePatches
 from keras.models import load_model
 import cv2
 from matplotlib import pyplot
