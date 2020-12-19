@@ -4,7 +4,7 @@
 # python transform_example.py --image images/example_03.png --coords "[(63, 242), (291, 110), (361, 252), (78, 386)]"
 
 # import the necessary packages
-from pyimagesearch.transform import four_point_transform, resizePatches
+from transform import four_point_transform, resizePatches
 import numpy as np
 import argparse
 import cv2
