@@ -195,24 +195,6 @@ def draw_boxes(filename, v_boxes, v_labels, v_scores):
 		label = "%s (%.3f)" % (v_labels[i], v_scores[i])
 		pyplot.text(x1, y1, label, color='white')
         
-#     for ((xA, yA), (xB, yB), color) in zip(refCoords, objCoords, colors):
-# 		# draw circles corresponding to the current points and
-# 		# connect them with a line
-# 		cv2.circle(orig, (int(xA), int(yA)), 5, color, -1)
-# 		cv2.circle(orig, (int(xB), int(yB)), 5, color, -1)
-# 		cv2.line(orig, (int(xA), int(yA)), (int(xB), int(yB)),
-# 			color, 2)
-# 		# compute the Euclidean distance between the coordinates,
-# 		# and then convert the distance in pixels to distance in
-# 		# units
-# 		D = dist.euclidean((xA, yA), (xB, yB)) / refObj[2]
-# 		(mX, mY) = midpoint((xA, yA), (xB, yB))
-# 		cv2.putText(orig, "{:.1f}in".format(D), (int(mX), int(mY - 10)),
-# 			cv2.FONT_HERSHEY_SIMPLEX, 0.55, color, 2)
-# 		# show the output image
-# 		cv2.imshow("Image", orig)
-# 		cv2.waitKey(0)
-	# show the plot
 	pyplot.show()
 
 def getYOLOBBox(model, photo_filename, target_w, target_h, draw_boxes_flag, class_threshold=0.6):
