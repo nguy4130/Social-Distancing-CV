@@ -54,11 +54,12 @@ def main(dataset, data_time, detector):
         cap = cv2.VideoCapture(os.path.join('/content/drive/MyDrive/CSCI5561Project/dataset', 'image10.jpg'))
         frame_skip = 25  # grand central dataset has fps of 25
         thr_score = 0.5
+    ##################### Adding our datasets #########################
     elif dataset in ['tinyImg1', 'tinyImg2', 'redoImg1', 'redoImg2']:
-        # cap = cv2.VideoCapture(os.path.join('/content/drive/MyDrive/CSCI5561Project/social-distancing-monitoring', dataset+'.avi'))
-        cap = cv2.VideoCapture(os.path.join('/content/drive/MyDrive/CSCI5561Project/dataset/TinyImg2/Img_29.png'))
-        frame_skip = 15  # grand central dataset has fps of 25
-        thr_score = 0.6
+        cap = cv2.VideoCapture(os.path.join('/content/Social-Distancing-CV/social-distancing-monitoring', dataset+'.avi'))
+        frame_skip = 15  # we combined the imaged into a video of 15 fps
+        thr_score = 0.6 # our thredhold for faster R-CNN
+    ###############################################################
     else:
         raise Exception('Invalid Dataset')
 
@@ -101,7 +102,9 @@ def main(dataset, data_time, detector):
 
           # get positions and plot on raw image
           pts_world = []
+          ######### Variable to count number of people ##########
           count = 0
+          #######################################################
           for i in range(len(boxes)):
               if classIDs[i] == 1 and scores[i] > thr_score:
                   # extract the bounding box coordinates
@@ -173,7 +176,7 @@ def main(dataset, data_time, detector):
           print('=======================')
           i_frame += 1
         except:
-          print('Frame %d - error' % i_frame)
+          print('Frame %d - cannot detect people' % i_frame)
           i_frame += 1
           continue
 
