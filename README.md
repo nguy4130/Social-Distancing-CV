@@ -31,9 +31,3 @@ To run the people counting with Faster R-CNN, open the Google Colab Notebook [ba
 ### Images:
 Link to our dataset: In form of [individual images](https://drive.google.com/file/d/1XLzIjKbUafkdz5T_jM_RwI44TkizzaaG/view?usp=sharing) and [video](https://drive.google.com/file/d/1XYTxtSbneh4NQOrSUtVovzC1_HzcdvM0/view?usp=sharing) (to run with Faster R-CNN)
 
-
-YOLOV3 model is used to perform object detection. We made minor changesto code by darknet module to obtain bounding box coordinates of objects detected
-
-Planar Homography estimation - transform.py, homography_cnn.py files
-
-distance calculation is done by running distanceCalculation.py
