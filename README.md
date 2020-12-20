@@ -3,14 +3,14 @@ This repository has code to calculate the number of social distancing violations
 
 ## Modules in the repository
 ### YOLOv3
-Has source code and pretrained model of YOLOv3
+Has source code and pretrained model of YOLOv3 algorithm used for object detection
 
 ### Ground Plane Detection
-* Code to build ground truth oof ground plane using openCV
+* Code to build ground truth of ground plane using openCV 
 * CNN to predict homography matrix
 
 ### Distance Estimation
-Code to run object detection, warp images and calculate distances
+Code to run object detection, warp images and calculate pairwise distances between people and count the number of social distancing violations(< 6 feet apart)
 
 ### Baseline
 An existing implementation that uses similar approach of object detection and distance estimation to evaluating social distancing 
