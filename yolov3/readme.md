@@ -7,7 +7,7 @@ We could not upload the actual model and weights we used in our project, due to 
 YOLOV3 pretrained model weights: wget https://pjreddie.com/media/files/yolov3.weights
 YOLOV3 pretrained Model: git clone https://github.com/pjreddie/darknet
 
-References
+###References
 1. https://pjreddie.com/darknet/yolo/
 2. https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/
 
