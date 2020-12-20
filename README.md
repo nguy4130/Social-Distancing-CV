@@ -1,5 +1,5 @@
 # Social-Distancing-CV
-This repository has code to calculate the number of social distancing violations given in an image. We implemented a CNN to identify ground plane in the image and perform homography transformation to get bird's eye view of the image. We ran object detection algorithm - YOLOv3 to identify persons in the image. If distance between bounding boxes in the bird's ye view is < 6 feet, it is considered a violation of social distancing. 
+This repository has code to calculate the number of social distancing violations given in an image. We implemented a CNN to identify ground plane and perform homography transformation to get bird's eye view of the image. We ran object detection algorithm - YOLOv3 to identify all the persons. If distance between bounding boxes in the bird's eye view is < 6 feet, it is considered a violation of social distancing. 
 
 ## Modules in the repository
 ### YOLOv3
