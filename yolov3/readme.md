@@ -5,6 +5,7 @@ This module consists of the YOLOv3 code borrowed from darknet and pyimagesearch 
 We could not upload the actual model and weights we used in our project, due to the file size limit. They can be downloaded from the original source URLs:
 
 YOLOV3 pretrained model weights: wget https://pjreddie.com/media/files/yolov3.weights
+
 YOLOV3 pretrained Model: git clone https://github.com/pjreddie/darknet
 
 ### References
