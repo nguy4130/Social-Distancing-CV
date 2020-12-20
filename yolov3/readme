@@ -1,6 +1,0 @@
-Links to download YOLO pretarined model and weights
-
-YOLOV3 pretrained model weights: wget https://pjreddie.com/media/files/yolov3.weights
-YOLOV3 pretarined Model: git clone https://github.com/pjreddie/darknet
-
-Reference: https://pjreddie.com/darknet/yolo/
